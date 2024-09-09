@@ -14,8 +14,7 @@ Para la primera versión, existen 4 artefactos:
 - Armadura de acero valyrio
 
 Al principio Rolando solo puede llevar hasta 2 artefactos a la vez, 
-pero se espera que a medida que se desarrolla el juego pueda incrementar 
-su capacidad.
+pero se espera que a medida que se desarrolla el juego pueda incrementar su capacidad.
 
 Cada vez que rolando se encuentra con un artefacto, y tiene capacidad para llevarlo, lo levanta. 
 
@@ -28,6 +27,7 @@ Cada vez que rolando se encuentra con un artefacto, y tiene capacidad para lleva
 
 El castillo de piedra es donde Rolando vive. Es tan grande que allí no hay límite 
 para almacenar artefactos.
+
 Cuando rolando llega al castillo de piedra guarda en él todos los artefactos que lleva encima, 
 liberando espacio para poder levantar nuevos. 
 
@@ -41,7 +41,8 @@ liberando espacio para poder levantar nuevos.
 
 ## Saber los artefactos de Rolando
  Hay dos preguntas interesantes que debe poder contestar Rolando, por un lado cuales son los artefactos que tiene encima 
- (ya resuelto en el punto anterior), pero tambien debe saber cuales son todos los artefactos que él posee 
+ (ya resuelto en el punto anterior), 
+ pero tambien debe saber cuales son todos los artefactos que él posee 
  sin importar si lo tiene encima o en su castillo.
  
  También se quiere preguntar si posee un artefacto en especial.
@@ -53,7 +54,9 @@ liberando espacio para poder levantar nuevos.
  
 ## Saber la historia de los encuentros con los artefactos.
  
- Se desea saber el orden en que rolando fue encontrandose los artefactos, independientemente de si los agarró o no.
+ Se desea saber el orden en que rolando 
+ fue encontrandose los artefactos, 
+ independientemente de si los agarró o no.
  
 ### Ejemplo:
  

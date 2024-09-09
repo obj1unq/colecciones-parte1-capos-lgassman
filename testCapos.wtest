@@ -1,1 +1,57 @@
-r
+import capos.*
+describe "rolando" {
+
+
+    test "encontrar cosas" {
+        rolando.encontrar(espada)
+        rolando.encontrar(libro)
+        rolando.encontrar(collar)
+
+//      assert.equals( 2 , rolando.mochila().size())
+        assert.equals( #{libro, espada}  , rolando.mochila())
+
+    }
+
+    test "ir a al hogar" {
+        rolando.encontrar(espada)
+        rolando.encontrar(libro)
+        rolando.irAlHogar()
+        assert.notThat( rolando.tieneArtefactos())
+        assert.equals(#{espada, libro}, castillo.cofre())
+//        assert.equals( #{}, rolando.mochila())
+
+        rolando.encontrar(collar)
+        rolando.irAlHogar()
+        assert.notThat( rolando.tieneArtefactos())
+        assert.equals(#{espada, libro, collar}, castillo.cofre())
+    }
+
+    test "posesiones" {
+        castillo.cofre(#{collar, espada})
+        rolando.mochila(#{armadura})
+        assert.equals(#{collar, espada, armadura}, rolando.posesiones())
+        assert.notThat(rolando.posee(libro))
+        assert.that(rolando.posee(espada))
+        assert.that(rolando.posee(armadura))
+        assert.that(rolando.posee(collar))
+      
+    }
+
+    test "historial"  {
+        rolando.encontrar(espada)
+        rolando.encontrar(libro)
+        rolando.encontrar(collar)
+        rolando.irAlHogar()
+        rolando.encontrar(armadura) //este es el indice 3 
+        rolando.encontrar(collar)
+
+        assert.equals([espada, libro, collar, armadura, collar], rolando.historial())
+
+        assert.equals( armadura , rolando.artefactoEnHistorial(3)) //contando de cero
+
+
+    }
+ 
+
+
+}
